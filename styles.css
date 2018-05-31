@@ -3,22 +3,45 @@ html, body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
-body {
+.home-page {
     background-image: url("imgs/trail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+.trails-main {
+    background-color: gray;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(164, 164, 164);
-    opacity: .8;
+    align-items: center;
+    /* background-color: rgb(83, 172, 240);
+    opacity: .2; */
     line-height: 50px;
     border-radius: 5px;
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover{
+    color: rgb(72, 72, 237);
+}
+.home {
+    display: flex;
+    align-items: center;
+}
+.hiking-img {
+    height: 50px;
+    width: 50px;
+    padding-right: 5px;
 }
 .search-area{
     display: flex;
@@ -30,9 +53,10 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 65px;
     padding-bottom: 20px;
     opacity: .8;
+    font-weight: bold;
 }
 .search-bar-input{
     width: 300px;
