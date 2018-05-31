@@ -31,14 +31,15 @@ $.get(URL)
     var element4 = $('<p>', {text: `Difficulty: ${difficulty}`})
     
     //stars
-
+    var stars = trails[0].stars;
+    var element5 = $('<p>', {text: `Rating: ${stars} stars`})
 
     //output to app
     $(document.body).append(element);
     $(document.body).append(element2);
     $(document.body).append(element3); 
     $(document.body).append(element4);
-
+    $(document.body).append(element5);
 
 });
 
@@ -48,10 +49,4 @@ $.get(URL)
 
 trailInfo();
 
-
-
-
-
-
-
-//stars
+//iterate through array to print each item to page 
