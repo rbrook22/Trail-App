@@ -25,31 +25,19 @@ $.get(URL)
 
         //create list items for each UL
         var nameItem = $(`<li>`,{text:`Trail Name: ${trail.name} ` });
-        
-
+        var locationItem = $(`<li>`, {text: `Location: ${trail.location}`});
+        var lengthItem = $(`<li>`, {text: `Length: ${trail.length} miles`});
+        var difficultyItem = $(`<li>`, {text: `Difficulty: ${trail.difficulty}`});
+        var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
 
 
 
         //appends li to ul
         trailCard.append(nameItem);
-
-
-
-      
-
-        // var location = trailitem.location;
-
-        // var length = trailitem.length;
-
-        // var difficulty = trailitem.difficulty;
-
-        // var stars = trailitem.stars;
-
-
-
-
-
-    
+        trailCard.append(locationItem);
+        trailCard.append(lengthItem);
+        trailCard.append(difficultyItem);
+        trailCard.append(starsItem);
 
     // //name of trail
     // var name = trails[0].name;
@@ -90,10 +78,8 @@ $(document.body).append(container);
 
 trailInfo();
 
-//iterate through array to print each array to page 
 
-//group each array item together 
 
 //do i need to change <p> tag to list item?
 
-//forEach trail, pull out ul and then for each ul add items into sections(trail cards)2
+
