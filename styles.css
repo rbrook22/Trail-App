@@ -1,17 +1,21 @@
-html, body {
+html,
+body {
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
+
 .home-page {
     background-image: url("imgs/trail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+
 .trails-main {
     background-color: gray;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,32 +26,39 @@ html, body {
     padding-left: 10px;
     padding-right: 10px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 a:visited {
     color: black;
 }
-a:hover{
+
+a:hover {
     color: rgb(72, 72, 237);
 }
+
 .home {
     display: flex;
     align-items: center;
 }
+
 .hiking-img {
     height: 50px;
     width: 50px;
     padding-right: 5px;
 }
-.search-area{
+
+.search-area {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 600px;
 }
+
 .title {
     display: flex;
     justify-content: center;
@@ -56,15 +67,18 @@ a:hover{
     opacity: .8;
     font-weight: bold;
 }
-.search-bar-input{
+
+.search-bar-input {
     width: 300px;
     text-align: center;
     border-radius: 5px;
 }
+
 .search-bar {
     padding-bottom: 20px;
 }
-.search-button-submit{
+
+.search-button-submit {
     border-radius: 5px;
     background-color: rgb(223, 223, 223);
 }
@@ -72,7 +86,8 @@ a:hover{
 /* Beginning of Media Queries */
 
 /* Media Queries @ 720 pixles */
-@media screen and (min-width: 720px){
+
+@media screen and (min-width: 720px) {
     .navbar {
         padding-left: 10px;
         padding-right: 10px;
@@ -90,8 +105,10 @@ a:hover{
         width: 400px;
     }
 }
+
 /* Media Queries @ 1080 pixles */
-@media screen and (min-width: 1080px){
+
+@media screen and (min-width: 1080px) {
     .title {
         font-size: 100px;
     }
@@ -103,5 +120,4 @@ a:hover{
         line-height: 30px;
         width: 100px;
     }
-
 }
