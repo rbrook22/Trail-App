@@ -16,8 +16,6 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgb(83, 172, 240);
-    opacity: .2; */
     line-height: 50px;
     border-radius: 5px;
     font-size: 20px;
@@ -69,4 +67,40 @@ a:hover{
 .search-button-submit{
     border-radius: 5px;
     background-color: rgb(223, 223, 223);
+}
+
+/* Beginning of Media Queries */
+
+/* Media Queries @ 720 pixles */
+@media screen and (min-width: 720px){
+    .navbar {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 25px;
+    }
+    .hiking-img {
+        height: 65px;
+        width: 65px;
+        padding-right: 5px;
+    }
+    .title {
+        font-size: 75px;
+    }
+    .search-bar-input {
+        width: 400px;
+    }
+}
+/* Media Queries @ 1080 pixles */
+@media screen and (min-width: 1080px){
+    .title {
+        font-size: 100px;
+    }
+    .search-bar-input {
+        height: 25px;
+        width: 500px;
+    }
+    .search-button-submit {
+        line-height: 30px;
+        width: 100px;
+    }
 }
