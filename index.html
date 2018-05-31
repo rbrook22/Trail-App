@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>R.A.D.  App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
- 
-    <title>Trail App</title>
+    
+  
+
 </head>
 <body>
+    <h2 id = "text-center">Enter the location:</h2>
+    <form action="" id="location-form">
+        <input type="text" id="location-input">
+        <br>
 
-
-
-
-</div>
-    
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <button type= "submit">Submit</button>
+    </form>
+    <div id="formatted-address"></div>
+    <div id="address-components"></div>
+    <div id="geometry"></div>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
