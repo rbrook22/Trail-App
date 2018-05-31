@@ -26,13 +26,18 @@ $.get(URL)
     var length = trails[0].length;
     var element3 = $('<p>', {text: `Length: ${length} miles`});
 
+    //difficulty
+    var difficulty =  trails[0].difficulty;
+    var element4 = $('<p>', {text: `Difficulty: ${difficulty}`})
     
+    //stars
 
 
     //output to app
     $(document.body).append(element);
     $(document.body).append(element2);
     $(document.body).append(element3); 
+    $(document.body).append(element4);
 
 
 });
@@ -47,6 +52,6 @@ trailInfo();
 
 
 
-//difficulty
+
 
 //stars
