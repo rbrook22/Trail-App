@@ -15,11 +15,24 @@ $.get(URL)
 
     //name of trail
     var name = trails[0].name;
-    var element = $('<p>', {text : `trail name: ${name}`});
+    var element = $('<p>', {text: `Trail Name: ${name}`});
+
+    //location
+    var location = trails[0].location;
+    var element2 = $('<p>', {text: `Location: ${location}`});
+
+   
+    //length of trail
+    var length = trails[0].length;
+    var element3 = $('<p>', {text: `Length: ${length} miles`});
+
+    
 
 
     //output to app
     $(document.body).append(element);
+    $(document.body).append(element2);
+    $(document.body).append(element3); 
 
 
 });
@@ -30,7 +43,9 @@ $.get(URL)
 
 trailInfo();
 
-//length of trail
+
+
+
 
 //difficulty
 
