@@ -8,27 +8,34 @@
     <title>R.A.D.  App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
-    
-  
 
+    <link rel="shortcut icon" href="imgs/trail-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+    <title>Trail App</title>
 </head>
-<body>
-    <h2 id = "text-center">Enter the location:</h2>
-    <form action="" id="location-form">
-        <input type="text" id="location-input">
-        <br>
-
-        <button type= "submit">Submit</button>
+<header class="navbar">
+    <div class="home"><img src="imgs/hiking.png" class="hiking-img"><a href="index.html"> R.A.D. Hiking</a></div>
+    <div class="about"><a href="about.html">About</a></div>
+</header>
+<body class="home-page">
+<section class="main">
+    <form class="search-area" id="location-form">
+        <div class="title">R.A.D. Hiking</div>
+        <div class="search-bar">
+            <input type="text" class="search-bar-input" id="location-input" placeholder="Enter your zip code or city and state">
+        </div>
+        <div class="search-button">
+            <input type="submit" value="Search" class="search-button-submit">
+        </div>
     </form>
-    <div id="formatted-address"></div>
-    <div id="address-components"></div>
-    <div id="geometry"></div>
-  
+</section>
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
   <script src="script.js"></script>
+
 
 </body>
 </html>
