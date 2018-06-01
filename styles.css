@@ -133,6 +133,15 @@ ul {
     .search-bar-input {
         width: 400px;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 90%;
+    }
+    .trail-list {
+        width: 40%;
+    }
 }
 
 /* Media Queries @ 1080 pixles */
@@ -148,5 +157,14 @@ ul {
     .search-button-submit {
         line-height: 30px;
         width: 100px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    .trail-list {
+        width: 20%;
     }
 }
