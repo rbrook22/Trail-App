@@ -4,6 +4,7 @@ body {
     width: 100%;
     font-family: 'Raleway', sans-serif;
 }
+/* Setting Images */
 
 .home-page {
     background-image: url("imgs/trail.jpg");
@@ -12,9 +13,7 @@ body {
     background-position: center center;
 }
 
-.trails-main {
-    background-color: gray;
-}
+/* Navbar Styling */
 
 .navbar {
     display: flex;
@@ -50,6 +49,16 @@ a:hover {
     width: 50px;
     padding-right: 5px;
 }
+#cover-img {
+    background-image: url("imgs/trail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -30px;
+}
+
+/* End Navbar Styling */
+
+/* Main Body/Search Area Styling */
 
 .search-area {
     display: flex;
@@ -57,6 +66,58 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 600px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.placeholder {
+    background-color: rgb(2, 92, 2);
+    opacity: .4;
+    height: 10%;
+}
+.trail-list-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.trail-list-1 {
+    border: 2px solid fuchsia;
+}
+
+.trail-list-2 {
+    border: 2px solid cyan;
+}
+
+.trail-list-3 {
+    border: 2px solid fuchsia;
+}
+
+.trail-list-4 {
+    border: 2px solid cyan;
+}
+
+.trail-list-5 {
+    border: 2px solid fuchsia;
+}
+
+.container {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trail-list {
+    border: 2px solid purple;
+    background-color: white;
+    width: 80%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .title {
@@ -83,6 +144,8 @@ a:hover {
     background-color: rgb(223, 223, 223);
 }
 
+/* End Main Body/Search Area Styling */
+
 /* Beginning of Media Queries */
 
 /* Media Queries @ 720 pixles */
@@ -104,6 +167,25 @@ a:hover {
     .search-bar-input {
         width: 400px;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* height: 100%; */
+    }
+    .trail-list {
+        width: 40%;
+    }
+    .trail-list-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+    }
+    #cover-img {
+        background-position: center -50px;
+    }
 }
 
 /* Media Queries @ 1080 pixles */
@@ -119,5 +201,17 @@ a:hover {
     .search-button-submit {
         line-height: 30px;
         width: 100px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 180%;
+    }
+    .trail-list {
+        width: 20%;
+    }
+    #cover-img {
+        background-position: center -230px;
     }
 }
