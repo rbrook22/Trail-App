@@ -23,10 +23,10 @@ function display(trails){
         var container = $(`<div>`, {class: `container`});
 
         trails.forEach(function(trail){
-        var trailCardDiv = $(`<div>`);
+        var trailCardDiv = $(`<div>`, {class: `trail-list-main`});
 
         //create an UL for each item on array
-        var trailCard = $(`<ul>`);
+        var trailCard = $(`<ul>`, {class: `trail-list`});
         container.append(trailCardDiv);
         
         trailCardDiv.append(trailCard);
