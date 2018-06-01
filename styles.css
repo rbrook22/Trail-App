@@ -13,11 +13,6 @@ body {
     background-position: center center;
 }
 
-.trails-main {
-    /* background-color: rgb(205, 208, 206); */
-    /* opacity: .8; */
-}
-
 /* Navbar Styling */
 
 .navbar {
@@ -78,8 +73,8 @@ ul {
 }
 
 .placeholder {
-    background-color: rgb(217, 220, 217);
-    opacity: .2;
+    background-color: rgb(2, 92, 2);
+    opacity: .4;
     height: 10%;
 }
 .trail-list-main {
@@ -91,10 +86,6 @@ ul {
 }
 .trail-list-1 {
     border: 2px solid fuchsia;
-    background-image: url("imgs/topographic.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .trail-list-2 {
