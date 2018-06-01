@@ -14,7 +14,8 @@ body {
 }
 
 .trails-main {
-    background-color: gray;
+    /* background-color: rgb(205, 208, 206); */
+    /* opacity: .8; */
 }
 
 /* Navbar Styling */
@@ -57,6 +58,7 @@ a:hover {
     background-image: url("imgs/trail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center -30px;
 }
 
 /* End Navbar Styling */
@@ -73,6 +75,42 @@ a:hover {
 
 ul {
     list-style-type: none;
+}
+
+.placeholder {
+    background-color: rgb(217, 220, 217);
+    opacity: .2;
+    height: 10%;
+}
+.trail-list-main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    width: 100%;
+}
+.trail-list-1 {
+    border: 2px solid fuchsia;
+    background-image: url("imgs/topographic.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.trail-list-2 {
+    border: 2px solid cyan;
+}
+
+.trail-list-3 {
+    border: 2px solid fuchsia;
+}
+
+.trail-list-4 {
+    border: 2px solid cyan;
+}
+
+.trail-list-5 {
+    border: 2px solid fuchsia;
 }
 
 .container {
@@ -147,6 +185,9 @@ ul {
     .trail-list {
         width: 40%;
     }
+    #cover-img {
+        background-position: center -50px;
+    }
 }
 
 /* Media Queries @ 1080 pixles */
@@ -167,9 +208,12 @@ ul {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 50%;
+        height: 65%;
     }
     .trail-list {
         width: 20%;
+    }
+    #cover-img {
+        background-position: center -230px;
     }
 }
