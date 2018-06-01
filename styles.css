@@ -78,10 +78,10 @@ ul {
     height: 10%;
 }
 .trail-list-main {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .trail-list-1 {
@@ -171,10 +171,17 @@ ul {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 90%;
+        /* height: 100%; */
     }
     .trail-list {
         width: 40%;
+    }
+    .trail-list-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
     }
     #cover-img {
         background-position: center -50px;
@@ -199,7 +206,7 @@ ul {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        height: 65%;
+        height: 180%;
     }
     .trail-list {
         width: 20%;
