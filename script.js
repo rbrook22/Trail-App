@@ -51,9 +51,9 @@ function trailInfo(location){
         let str = JSON.stringify(trails);
         localStorage.setItem("returnedTrails", str);
 
+       });
        
-       
-       
+    window.location.href ="trail-offers.html";
        
        
        
@@ -86,7 +86,7 @@ function trailInfo(location){
 
     // //append container to body of HTML
     // $(document.body).append(container);
-});
+
 
 
 
