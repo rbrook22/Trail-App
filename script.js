@@ -46,51 +46,24 @@ function trailInfo(location){
         // console.log(response);
         //grab trails from respinse
         var trails = response.trails;
-        console.log(response);
-       
+      
+       //Turns returned Object into String for localstorage
         let str = JSON.stringify(trails);
         localStorage.setItem("returnedTrails", str);
 
        });
-       
+    
+       //change window to next page
     window.location.href ="trail-offers.html";
        
-       
-       
-        //  //create a `div` container
-        // var container = $(`<div>`, {class: `container`});
-
-        // trails.forEach(function(trail){
-        // //create an UL for each item on array
-        // var trailCard = $(`<ul>`);
-        // container.append(trailCard);
-
-
-        // //create list items for each UL
-        // var nameItem = $(`<li>`,{text:`Trail Name: ${trail.name} ` });
-        // var locationItem = $(`<li>`, {text: `Location: ${trail.location}`});
-        // var lengthItem = $(`<li>`, {text: `Length: ${trail.length} miles`});
-        // var difficultyItem = $(`<li>`, {text: `Difficulty: ${trail.difficulty}`});
-        // var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
-
-
-
-        // //appends li to ul
-        // trailCard.append(nameItem);
-        // trailCard.append(locationItem);
-        // trailCard.append(lengthItem);
-        // trailCard.append(difficultyItem);
-        // trailCard.append(starsItem);
-
-    // });
-
-    // //append container to body of HTML
-    // $(document.body).append(container);
-
-
-
-
 }
+
+
+      
+
+
+
+
 
 
 
