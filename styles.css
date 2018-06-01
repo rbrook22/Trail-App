@@ -53,6 +53,11 @@ a:hover {
     width: 50px;
     padding-right: 5px;
 }
+#cover-img {
+    background-image: url("imgs/trail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* End Navbar Styling */
 
