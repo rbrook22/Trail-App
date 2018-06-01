@@ -50,11 +50,14 @@ function trailInfo(location){
        //Turns returned Object into String for localstorage
         let str = JSON.stringify(trails);
         localStorage.setItem("returnedTrails", str);
-
+      
+         window.location.href ="trail-offers.html";
+       
        });
     
+        
        //change window to next page
-    window.location.href ="trail-offers.html";
+    
        
 }
 
