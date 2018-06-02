@@ -23,14 +23,14 @@ function display(trails){
         var container = $(`<div>`, {class: `container`});
 
         trails.forEach(function(trail){
-        var trailCardDiv = $(`<div>`, {class: `trail-list-main`});
+        var trailCardDiv = $(`<div>`);
+        
 
         //create an UL for each item on array
         var trailCard = $(`<ul>`, {class: `trail-list`});
         container.append(trailCardDiv);
         
         trailCardDiv.append(trailCard);
-
     
         //create list items for each UL
 
@@ -42,6 +42,9 @@ function display(trails){
         //pull out image
          var img = $(`<img>`);  
          img.attr('src', trail.imgMedium);
+         if (trail.imgMedium === ""){
+             img.attr('src', 'imgs/hiking.png');
+         }
          trailCardDiv.append(img);       
         //appends li to ul
      
@@ -52,6 +55,7 @@ function display(trails){
         trailCard.append(starsItem);
 
     });
+        
 
 
     //append container to body of HTML
