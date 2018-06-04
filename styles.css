@@ -206,13 +206,17 @@ slide:nth-child(10){
 /* End of Carousel Slideshow Styling */
 
 .header-disp {
-    height: 350px;
-    font-size: 20px;
-    text-align: center center;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    text-align: center;
     background-color: rgba(15, 50, 15, 0.762);
 }
 .header-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 
 }
@@ -255,6 +259,41 @@ slide:nth-child(10){
     border-radius: 5px;
     background-color: rgb(223, 223, 223);
 }
+
+.group-header {
+    height: 50px;
+    background-color: rgba(15, 50, 15, 0.762);
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+
+.group-img {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 300px;
+    margin: 0;
+}
+
+.name {
+    text-align: center;
+    font-size: 35px;
+}
+.group-footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: rgba(15, 50, 15, 0.762);
+}
+
+.linkedin, .github {
+    height: 50px;
+    width: 50px;
+    padding-right: 20px;
+}
+
+
 
 /* End Main Body/Search Area Styling */
 
