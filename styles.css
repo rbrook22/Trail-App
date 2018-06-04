@@ -312,9 +312,8 @@ slide:nth-child(6){
     }
 
     .container {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         height: 160%;
     }
@@ -328,14 +327,6 @@ slide:nth-child(6){
 
     .trail-list {
         width: 60%;
-    }
-
-    .trail-list-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* width: 100%; */
     }
 
     #cover-img {
@@ -402,14 +393,23 @@ slide:nth-child(6){
     }
 
     .container {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
-        height: 180%;
+        height: 160%;
+    }
+
+    #trail-card-div {
+        height: 20%;
+        width: 30%;
+        
     }
 
     .trail-list {
-        width: 20%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 25%;
     }
     
     .group-member {
