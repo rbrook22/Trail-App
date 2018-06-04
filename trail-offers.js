@@ -23,7 +23,7 @@ function display(trails){
         var container = $(`<div>`, {class: `container`});
 
         trails.forEach(function(trail){
-        var trailCardDiv = $(`<div>`);
+        var trailCardDiv = $(`<div>`, {id: `trail-card-div`});
         
 
         //create an UL for each item on array
@@ -58,18 +58,9 @@ function display(trails){
 
         var difficultyItem = $(`<li>`, {text: `Difficulty: ${difficulty}`});
         
-
-
         var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
         
-        //pull out image
-         var img = $(`<img>`);  
-         img.attr('src', trail.imgMedium);
-         //add default img
-         if (trail.imgMedium === ""){
-             img.attr('src', 'imgs/hiking.png');
-         }
-         trailCardDiv.append(img);       
+    
         //appends li to ul
      
         trailCard.append(nameItem);
@@ -77,6 +68,18 @@ function display(trails){
         trailCard.append(lengthItem);
         trailCard.append(difficultyItem);
         trailCard.append(starsItem);
+
+       
+        //pull out image
+        
+        var imgBackground = trail.imgMedium;
+        if (trail.imgMedium === ""){
+            imgBackground = 'imgs/hiking.png'
+        }
+
+        //assigns pulled out image as background image
+        trailCardDiv.css(`background-image`, `url(${imgBackground})`);   
+        //add class that rick makes for each div 
 
     });
         
