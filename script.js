@@ -19,7 +19,7 @@ function geoLocationCode(event){
         var results = response.results;
         return results[0].geometry.location;
     })
-    .then(trailInfo)
+    .then(trailInfo)  
     .catch(function(error){
         console.log(error);
     })
@@ -51,7 +51,7 @@ function trailInfo(location){
         let str = JSON.stringify(trails);
         localStorage.setItem("returnedTrails", str);
       
-         window.location.href ="trail-offers.html";
+        window.location.href ="trail-offers.html";
        
        });
     
@@ -62,7 +62,7 @@ function trailInfo(location){
 }
 
 
-      
+ 
 
 
 
