@@ -87,7 +87,7 @@ function display(trails){
 
     //append container to body of HTML
     $(document.body).append(container);
-
+    console.log('hey')
 };
 
  
@@ -98,27 +98,35 @@ function display(trails){
 
         var weatherAPI = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude2}&lon=${longitude2}&units=imperial&APPID=865f583ab7e2e42228c051145a844358`;
         
-        $.get(weatherAPI)  
         
-        .then(function(data){
+
+         $.get(weatherAPI).then(function(data){
+             console.log(data);
             //create a weather div
+           
             var weatherContainer = $(`<div>`, {class: `weather-container`});
             //create variable tp hold weather info 
             var icon = data.weather[0].icon;
             var city = data.name;
             var temperature = data.main.temp;
             var description = data.weather[0].description;
+            //sunrise = new Date(data.sunrise * 1000);
 
+           
            //create p container
            var weatherCard = $(`<p>`, {text: `The current temperature in ${city} is ${temperature} degrees(F) with ${description}.`});
 
-            
+            //append <p> to <div>
+         
             weatherContainer.append(weatherCard);
-       
+            
+            //append div to body
             $(document.body).append(weatherContainer);
-           
-        })
-        //append div to body
+            console.log('crunchy granola asshole?')
+       
         
-        }
+    
+       
+        });
+    }
     
