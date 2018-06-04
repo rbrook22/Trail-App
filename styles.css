@@ -239,7 +239,18 @@ slide:nth-child(6){
 
 .search-button-submit {
     border-radius: 5px;
+    /* background-color: rgb(223, 223, 223); */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    border-width: 3px;
+}
+
+.search-button-submit:hover {
     background-color: rgb(223, 223, 223);
+    opacity: .6;
+    color: black;
 }
 .header-content {
     font-size: 20px;
