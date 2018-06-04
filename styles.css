@@ -117,7 +117,7 @@ ul {
 }
 /* Beginning of Carousel Slideshow Styling */
 .carousel {
-    height: 335px;
+    height: 319px;
 }
 slider {
     display:block;
@@ -247,7 +247,11 @@ slide:nth-child(6){
     border-radius: 5px;
     background-color: rgb(223, 223, 223);
 }
-
+.header-content {
+    font-size: 20px;
+    line-height: 30px;
+    
+}
 .group-header {
     height: 50px;
     background-color: rgba(15, 50, 15, 0.762);
@@ -272,6 +276,7 @@ slide:nth-child(6){
     text-align: center;
     font-size: 35px;
 }
+
 .group-footer {
     display: flex;
     justify-content: center;
@@ -297,26 +302,32 @@ slide:nth-child(6){
         padding-right: 10px;
         font-size: 25px;
     }
+
     .hiking-img {
         height: 65px;
         width: 65px;
         padding-right: 5px;
     }
+
     .title {
         font-size: 75px;
     }
+
     .search-bar-input {
         width: 400px;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         /* height: 100%; */
     }
+
     .trail-list {
         width: 40%;
     }
+
     .trail-list-main {
         display: flex;
         flex-direction: column;
@@ -324,9 +335,15 @@ slide:nth-child(6){
         align-items: center;
         /* width: 100%; */
     }
+
     #cover-img {
         background-position: center -50px;
     }
+
+    .header-content {
+        font-size: 25px;
+    }
+
     .group-section {
         display: flex;
         flex-direction: row;
@@ -335,10 +352,17 @@ slide:nth-child(6){
         flex-wrap: wrap;
         height: auto;
     }
+
     .group-header {
         height: 80px;
         width: 100%;
     }
+
+    .group-img {
+        height: 200px;
+        width: 230px;
+    }
+
     .group-member {
         display: flex;
         flex-direction: column;
@@ -346,10 +370,12 @@ slide:nth-child(6){
         width: 40%;
         padding-bottom: 5%;
     }
+
     .group-footer {
         justify-content: space-around;
         width: 80%;
     }
+
     .linkedin, .github {
         padding: 0;
     }
@@ -362,30 +388,45 @@ slide:nth-child(6){
     .title {
         font-size: 100px;
     }
+
     .search-bar-input {
         height: 25px;
         width: 500px;
     }
+
     .search-button-submit {
         line-height: 30px;
         width: 100px;
     }
+
     .container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         height: 180%;
     }
+
     .trail-list {
         width: 20%;
+    }
+    
+    .group-member {
+        width: 30%;
+    }
+
+    .group-img {
+        height: 280px;
+        width: 300px;
     }
     #cover-img {
         background-position: center -230px;
     }
+
     .group-section {
         display: flex;
         justify-content: center;
     }
+
 }
 
 /* End of Media Queries */
