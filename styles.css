@@ -266,12 +266,72 @@ slide:nth-child(6){
 }
 
 /* Begin Image Hover effect */
+.img-hover {
+    padding: 0;
+    margin: 0;
+}
+
+ul li .image-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 325px;
+    box-sizing: border-box;
+}
+
+.image-box figure {
+    position: relative;
+    overflow: hidden;
+}
+.image-box figure:before, 
+.image-box figure:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: rgba(15, 50, 15, 0.762);
+    transition: .5s;
+}
+.image-box figure:before {
+    left: -50%;
+} 
+.image-box:hover figure:before {
+    left: 0;
+}
+.image-box figure:after {
+    right: -50%;
+} 
+.image-box:hover figure:after {
+    right: 0;
+}
 .image-box figure figcaption {
     position: absolute;
-    top: 1110px;
+    top: 20px;
     left: 20px;
+    bottom: 20px;
+    right: 20px;
     background: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(20px);
+    z-index: 1;
 }
+
+.image-box:hover figure figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-box figure figcaption h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
 
 /* End Image Hover effect */
 .group-mems {
@@ -299,8 +359,8 @@ slide:nth-child(6){
 }
 
 .linkedin, .github {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     padding-right: 20px;
 }
 .weather-container {
