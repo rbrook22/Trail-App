@@ -64,7 +64,6 @@ function display(trails){
         var difficultyItem = $(`<li>`, {text: `Difficulty: ${difficulty}`});
         
         //stars
-        // var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
         var starItem = $(`<li>`, {
             // text: `${trail.stars}`,
             class: `starItem`
@@ -154,21 +153,26 @@ function weatherInfo(array){
         //create a weather div
        
         var weatherContainer = $(`<div>`, {class: `weather-container`});
+        var weatherList = $(`<ul>`, {class:`weather-list`});
         //create variable tp hold weather info 
         var icon = data.weather[0].icon;
         var city = data.name;
         var temperature = data.main.temp;
         var description = data.weather[0].description;
-        //sunrise = new Date(data.sunrise * 1000);
+        var sunrise = new Date(data.sys.sunrise * 1000);
+        var sunset = new Date(data.sys.sunset * 1000);
 
        
        //create p container
-       var weatherCard = $(`<p>`, {text: `The current temperature in ${city} is ${temperature} degrees(F) with ${description}.`});
-
-        //append <p> to <div>
+       var weatherCard = $(`<li>`,  {text: `The current temperature in ${city} is ${temperature} degrees(F) with ${description}.`});
+       var weatherCard2 = $(`<li>`,  {text: `Sunrise: ${sunrise} /  Sunset: ${sunset}`});
      
-        weatherContainer.append(weatherCard);
-        
+        //append <p> to <div>
+        $("#icon").attr("src", "http://openweathermap.org/img/w/" + icon + ".png");
+        weatherList.append(weatherCard);
+        weatherList.append(weatherCard2);
+        weatherContainer.append(weatherList);
+       
         //append div to body
         $(".weather-container-main").append(weatherContainer);
         
