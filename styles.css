@@ -396,6 +396,24 @@ ul li .image-box {
 
   }
 
+ /**********************weather container */
+ .weather-container-main{
+     background-color: rgba(15, 50, 15, 0.762);
+     color: white;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .weather-container li:nth-of-type(2){
+     color:#ADD8E6;
+     padding-top: 10px;
+ }
+ #icon {
+     width:100px;
+     height:100px;
+ }
 /* End Main Body/Search Area Styling */
 
 /* Beginning of Media Queries */
