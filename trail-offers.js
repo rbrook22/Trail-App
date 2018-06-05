@@ -170,7 +170,7 @@ function weatherInfo(array){
         weatherContainer.append(weatherCard);
         
         //append div to body
-        $(document.body).append(weatherContainer);
+        $(".weather-container-main").append(weatherContainer);
         
    
     
