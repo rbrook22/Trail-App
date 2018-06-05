@@ -25,18 +25,18 @@
             //     var trailCard = $(`<ul>`);
             //     container.append(trailCard);
                 //create list items for each UL
-                var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
-                var nameItem = $(`<li>`);
-                nameItem.append(nameLink);
-                var locationItem = $(`<li>`, {
-                    text: `Location: ${trail.location}`
-                });
-                var lengthItem = $(`<li>`, {
-                    text: `Length: ${trail.length} miles`
-                });
-                var difficultyItem = $(`<li>`, {
-                    text: `Difficulty: ${trail.difficulty}`
-                });
+                // var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
+                // var nameItem = $(`<li>`);
+                // nameItem.append(nameLink);
+                // var locationItem = $(`<li>`, {
+                //     text: `Location: ${trail.location}`
+                // });
+                // var lengthItem = $(`<li>`, {
+                //     text: `Length: ${trail.length} miles`
+                // });
+                // var difficultyItem = $(`<li>`, {
+                //     text: `Difficulty: ${trail.difficulty}`
+                // });
 
                 // write javascript to reproduce this
 

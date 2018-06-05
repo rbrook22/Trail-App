@@ -34,21 +34,15 @@ function display(trails){
     
         //create list items for each UL
 
-        // var nameItem = $(`<li>`,{text:`Trail Name: ${trail.name} ` });
+        //name link
         var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
         var nameItem = $(`<li>`);
         nameItem.append(nameLink);
-        
-        
-        
-        
-        
-        
-        
-        
+        //location
         var locationItem = $(`<li>`, {text: `Location: ${trail.location}`});
+        //length
         var lengthItem = $(`<li>`, {text: `Length: ${trail.length} miles`});
-
+        // diffculty
         var difficulty = trail.difficulty
             if(difficulty === "green"){
             difficulty= "Easy";
@@ -69,8 +63,18 @@ function display(trails){
 
         var difficultyItem = $(`<li>`, {text: `Difficulty: ${difficulty}`});
         
-        var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
-        
+        //stars
+        // var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
+        var starItem = $(`<li>`, {
+            text: `${trail.stars}`,
+            class: `starItem`
+        });
+
+        starsDynamicDivs(trail.stars, starItem);
+
+        var id = $(`<li>`, {
+            text: `id: ${trail.id}`
+        });
     
         //appends li to ul
      
@@ -78,7 +82,7 @@ function display(trails){
         trailCard.append(locationItem);
         trailCard.append(lengthItem);
         trailCard.append(difficultyItem);
-        trailCard.append(starsItem);
+        trailCard.append(starItem);
 
        
         //pull out image
@@ -101,6 +105,42 @@ function display(trails){
     console.log('hey')
 };
 
+//function to draw stars
+function starsDynamicDivs(rating, starItem) {
+    var divRating = $(`<div>`, {
+        class: `${rating}`
+    });
+    var divOuterStar;
+    var divInnerStar;
+    console.log(rating)
+    for (var i = 1; i <= Math.floor(rating); i++) {
+        divOuterStar = $(`<div>`, {
+            class: `stars-outer fa fa-star`
+        });
+        divInnerStar = $(`<div>`, {
+            class: `star star-inner`
+        });
+        divRating.append(divOuterStar.append(divInnerStar));
+    }
+    var width = rating - Math.floor(rating);
+    // console.log(width);
+    var starPercentageTwoDecimals = parseFloat((width.toFixed(2))*100);
+    var divOuterStarLast = $(`<div>`, {
+        class: `stars-outer fa fa-star`
+    });
+    var divInnerStarLast = $(`<div>`, {
+        class: `star star-inner`,
+         });
+    
+    divOuterStarLast.css('transform',`scale(0.${starPercentageTwoDecimals})`);
+    divRating.append(divOuterStarLast.append(divInnerStarLast));
+    
+
+    starItem.append(divRating);
+}
+
+    
+//function to get weather info
 function weatherInfo(array){
     var latitude2 = array[0].latitude;
     var longitude2 = array[0].longitude;
@@ -131,7 +171,7 @@ function weatherInfo(array){
         
         //append div to body
         $(document.body).append(weatherContainer);
-        console.log('crunchy granola asshole?')
+        
    
     
 
@@ -140,6 +180,3 @@ function weatherInfo(array){
 }
 
  
-
-
-    
