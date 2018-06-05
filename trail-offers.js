@@ -71,7 +71,7 @@ function display(trails){
         });
     
         //appends li to ul
-     
+      
         trailCard.append(nameItem);
         trailCard.append(locationItem);
         trailCard.append(lengthItem);
@@ -80,14 +80,14 @@ function display(trails){
 
        
         //pull out image
-        
+    
         var imgBackground = trail.imgMedium;
         if (trail.imgMedium === ""){
             imgBackground = 'imgs/hiking.png'
         }
 
         //assigns pulled out image as background image
-        trailCardDiv.css(`background-image`, `url(${imgBackground})`);   
+         trailCardDiv.css(`background-image`, `url(${imgBackground})`);   
         //add class that rick makes for each div 
 
     });
