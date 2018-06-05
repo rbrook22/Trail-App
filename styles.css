@@ -265,6 +265,15 @@ slide:nth-child(6){
     text-align: center;
 }
 
+/* Begin Image Hover effect */
+.image-box figure figcaption {
+    position: absolute;
+    top: 1110px;
+    left: 20px;
+    background: #fff;
+}
+
+/* End Image Hover effect */
 .group-mems {
     display: flex;
     flex-direction: column;
