@@ -66,7 +66,7 @@ function display(trails){
         //stars
         // var starsItem = $(`<li>`, {text: `${trail.stars} stars`});
         var starItem = $(`<li>`, {
-            text: `${trail.stars}`,
+            // text: `${trail.stars}`,
             class: `starItem`
         });
 
