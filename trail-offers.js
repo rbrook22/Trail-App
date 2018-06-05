@@ -12,11 +12,6 @@ $(document).ready(function (){
 
 });
 
-
-    
-
-
-
  
 function display(trails){
     //create a `div` container
