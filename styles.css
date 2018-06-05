@@ -3,6 +3,7 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Raleway', sans-serif;
+    background-color: rgb(242, 242, 242);
 }
 
 /* Setting Images */
@@ -175,7 +176,7 @@ slide:nth-child(6){
 
 .header-disp {
     height: 50px;
-    font-size: 35px;
+    font-size: 45px;
     color: white;
     text-align: center;
     background-color: rgba(15, 50, 15, 0.762);
@@ -184,14 +185,12 @@ slide:nth-child(6){
 .header-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     background-color: white;
 
 }
 
 .container {
-    border: 3px solid red;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -209,9 +208,8 @@ slide:nth-child(6){
     
 }
 .trail-list {
-    border: 2px solid purple;
+    border: 2px solid black;
     background-color: white;
-    /* color: white; */
     width: 100%;
     text-align: left;
     padding: 5px;
