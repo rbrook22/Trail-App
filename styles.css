@@ -269,6 +269,9 @@ slide:nth-child(6){
 .img-hover {
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 ul li .image-box {
@@ -341,6 +344,11 @@ ul li .image-box {
 }
 
 .group-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%; 
+}
+.img-container {
     height: 150px;
     width: 200px;
     margin-top: 20px;
@@ -434,6 +442,10 @@ ul li .image-box {
         margin-right: 5px;
 
     }
+    
+    /* .img-hover {
+
+    } */
 
     #cover-img {
         background-position: center -50px;
@@ -455,11 +467,6 @@ ul li .image-box {
     .group-header {
         height: 80px;
         width: 100%;
-    }
-
-    .group-img {
-        height: 200px;
-        width: 230px;
     }
 
     .group-member {
@@ -508,10 +515,10 @@ ul li .image-box {
         width: 30%;
     }
 
-    .group-img {
+    /* .group-img {
         height: 280px;
         width: 300px;
-    }
+    } */
     #cover-img {
         background-position: center -230px;
     }
