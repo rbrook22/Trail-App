@@ -1,42 +1,42 @@
 // HIKING Project API
-function trailInfo(location) {
-    //pull out lat and long into var
-    var latitude = location.lat;
-    var longitude = location.lng;
-    //pass into URL
+// function trailInfo(location) {
+//     //pull out lat and long into var
+//     var latitude = location.lat;
+//     var longitude = location.lng;
+//     //pass into URL
 
-    var URL = `https://www.hikingproject.com/data/get-trails?lat=${latitude}&lon=${longitude}&maxDistance=10&key=200279512-8622afc34220d6d5684c57d9ed7c0eb5`
+//     var URL = `https://www.hikingproject.com/data/get-trails?lat=${latitude}&lon=${longitude}&maxDistance=10&key=200279512-8622afc34220d6d5684c57d9ed7c0eb5`
 
-    var URL1 = '';
+    // var URL1 = '';
 
-    $.get(URL)
+    // $.get(URL)
 
-        .then(function(response) {
+        // .then(function(response) {
 
-            var trails = response.trails;
+        //     var trails = response.trails;
 
             //create a `div` container
-            var container = $(`<div>`, {
-                class: `container`
-            });
+            // var container = $(`<div>`, {
+            //     class: `container`
+            // });
 
-            trails.forEach(function(trail) {
-                //create an ul for each item on array
-                var trailCard = $(`<ul>`);
-                container.append(trailCard);
+            // trails.forEach(function(trail) {
+            //     //create an ul for each item on array
+            //     var trailCard = $(`<ul>`);
+            //     container.append(trailCard);
                 //create list items for each UL
-                var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
-                var nameItem = $(`<li>`);
-                nameItem.append(nameLink);
-                var locationItem = $(`<li>`, {
-                    text: `Location: ${trail.location}`
-                });
-                var lengthItem = $(`<li>`, {
-                    text: `Length: ${trail.length} miles`
-                });
-                var difficultyItem = $(`<li>`, {
-                    text: `Difficulty: ${trail.difficulty}`
-                });
+                // var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
+                // var nameItem = $(`<li>`);
+                // nameItem.append(nameLink);
+                // var locationItem = $(`<li>`, {
+                //     text: `Location: ${trail.location}`
+                // });
+                // var lengthItem = $(`<li>`, {
+                //     text: `Length: ${trail.length} miles`
+                // });
+                // var difficultyItem = $(`<li>`, {
+                //     text: `Difficulty: ${trail.difficulty}`
+                // });
 
                 // write javascript to reproduce this
 
@@ -102,20 +102,20 @@ function starsDynamicDivs(rating, starItem) {
     starItem.append(divRating);
 }
 
-function geoLocationCode(event) {
-    event.preventDefault();
-    var location = document.getElementById('location-input').value; //gets the value from input field
-    $.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyD5XrrqpfdzbKeFRmqQ1CpQuc0VzHxXZsU`)
-        .then(function(response) {
-            console.log(response);
-            var results = response.results;
-            return results[0].geometry.location;
-        })
-        .then(trailInfo)
+// function geoLocationCode(event) {
+//     event.preventDefault();
+//     var location = document.getElementById('location-input').value; //gets the value from input field
+//     $.get(`https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=AIzaSyD5XrrqpfdzbKeFRmqQ1CpQuc0VzHxXZsU`)
+//         .then(function(response) {
+//             console.log(response);
+//             var results = response.results;
+//             return results[0].geometry.location;
+//         })
+//         .then(trailInfo)
 
-        .catch(function(error) {
-            console.log(error);
-        })
+//         .catch(function(error) {
+//             console.log(error);
+//         })
 
 }
 var locationForm = document.getElementById('location-form');

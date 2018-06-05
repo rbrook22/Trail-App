@@ -369,6 +369,33 @@ ul li .image-box {
     font-size: 20px;
 }
 
+/* ************** Entering Stars CSS ************************/
+.stars-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    color:rgb(255, 174, 0);
+  }
+   
+  
+   .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+  .stars-inner {
+    width: 0;
+  }
+
+  .starItem,.stars-outer{
+    display:inline;
+
+  }
+
 /* End Main Body/Search Area Styling */
 
 /* Beginning of Media Queries */
