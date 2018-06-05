@@ -34,7 +34,18 @@ function display(trails){
     
         //create list items for each UL
 
-        var nameItem = $(`<li>`,{text:`Trail Name: ${trail.name} ` });
+        // var nameItem = $(`<li>`,{text:`Trail Name: ${trail.name} ` });
+        var nameLink = `<a href="https://www.hikingproject.com/widget?v=3&map=1&type=trail&id=${trail.id}&x=-11720595&y=4863264&z=6">Trail Name: ${trail.name}</a>`;
+        var nameItem = $(`<li>`);
+        nameItem.append(nameLink);
+        
+        
+        
+        
+        
+        
+        
+        
         var locationItem = $(`<li>`, {text: `Location: ${trail.location}`});
         var lengthItem = $(`<li>`, {text: `Length: ${trail.length} miles`});
 
