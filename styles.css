@@ -426,7 +426,7 @@ ul li .image-box {
 /* Beginning of Media Queries */
 
 /* Media Query @ 360 pixles */
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 370px) {
     .carousel{
         height: 309px;
     }
@@ -440,7 +440,9 @@ ul li .image-box {
         padding-right: 10px;
         font-size: 25px;
     }
-
+    .carousel {
+        height: 349px;
+    }
     .hiking-img {
         height: 65px;
         width: 65px;
