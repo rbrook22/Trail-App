@@ -428,7 +428,7 @@ ul li .image-box {
 /* Media Query @ 360 pixles */
 @media screen and (min-width: 370px) {
     .carousel{
-        height: 309px;
+        height: 349px;
     }
 }
 
