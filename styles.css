@@ -93,7 +93,7 @@ ul {
 
 /* Beginning of Carousel Slideshow Styling */
 .carousel {
-    height: 319px;
+    height: 279px;
 }
 
 slider {
@@ -223,6 +223,7 @@ slide:nth-child(6){
     padding-bottom: 20px;
     opacity: .8;
     font-weight: bold;
+    text-align: center;
 }
 
 .search-bar-input {
@@ -423,6 +424,13 @@ ul li .image-box {
 /* End Main Body/Search Area Styling */
 
 /* Beginning of Media Queries */
+
+/* Media Query @ 360 pixles */
+@media screen and (min-width: 360px) {
+    .carousel{
+        height: 309px;
+    }
+}
 
 /* Media Queries @ 720 pixles */
 
