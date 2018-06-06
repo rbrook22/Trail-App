@@ -3,9 +3,9 @@
 ## <a href="http://resonant-planes.surge.sh/index.html"> Live Demo <a>
 
 ## Team Members
-* <a href="#"> Aylin DeBruyne </a>
-* <a href="#"> Delia Sanders </a>
-* <a href="#"> Rick Brooks </a>
+* <a href="https://github.com/adebruyne"> Aylin DeBruyne </a>
+* <a href="https://github.com/Dsande41"> Delia Sanders </a>
+* <a href="https://github.com/rbrook22"> Rick Brooks </a>
 
 ## Technologies Used
 * HTML 5
@@ -48,7 +48,7 @@ Once we had merged and solved any conflicts in our code, we had just about run o
 <p>
 The rating, displayed as stars, involved the use of Font Awesome, and it was created dynamically in JavaScript.
 
-<a href="https://codepen.io/rbrook22/pen/mKEgbJ"><img src="readme/codepen.png"></a>
+<a href="https://codepen.io/rbrook22/pen/mKEgbJ"> <img src="readme/codepen.png"> </a>
 
 The challenge with the dynamic creation of the rating occurred when the rendering of the decimal part wasn't filling the inside of the star properly because the image from Font Awesome was an SVG icon. In order to remedy this shortcoming, but still display the correct value, we decided to use the transform property. This resulted in the fifth star image to be depicted smaller than the other stars as its size was affected proportionally by the decimal value transformed into a percentage.
 
