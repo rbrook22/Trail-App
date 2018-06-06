@@ -48,9 +48,8 @@ Once we had merged and solved any conflicts in our code, we had just about run o
 <p>
 The rating, displayed as stars, involved the use of Font Awesome, and it was created dynamically in JavaScript.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="mKEgbJ" data-default-tab="js" data-user="rbrook22" data-embed-version="2" data-pen-title="mKEgbJ" class="codepen">See the Pen <a href="https://codepen.io/rbrook22/pen/mKEgbJ/">mKEgbJ</a> by Rick Brooks (<a href="https://codepen.io/rbrook22">@rbrook22</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-
-<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+<iframe height='265' scrolling='no' title='mKEgbJ' src='//codepen.io/rbrook22/embed/mKEgbJ/?height=265&theme-id=0&default-tab=js&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/rbrook22/pen/mKEgbJ/'>mKEgbJ</a> by Rick Brooks (<a href='https://codepen.io/rbrook22'>@rbrook22</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 The challenge with the dynamic creation of the rating occurred when the rendering of the decimal part wasn't filling the inside of the star properly because the image from Font Awesome was an SVG icon. In order to remedy this shortcoming, but still display the correct value, we decided to use the transform property. This resulted in the fifth star image to be depicted smaller than the other stars as its size was affected proportionally by the decimal value transformed into a percentage.
 
