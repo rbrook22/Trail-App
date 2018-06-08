@@ -1,6 +1,6 @@
 ## R.A.D. Hiking
 
-## <a href="http://resonant-planes.surge.sh/index.html"> Live Demo <a>
+## <a href="http://radhiking.surge.sh/"> Live Demo <a>
 
 ## Team Members
 * <a href="https://github.com/adebruyne"> Aylin DeBruyne </a>
